@@ -52,26 +52,6 @@
 
             #endregion
 
-            //--------------------------------------
-            #region ex3
-
-
-            var query = from person in people
-                        group person by person.City into cityGroup
-                        select cityGroup;
-
-            foreach (var group in query)
-            {
-                //Console.WriteLine($"City: {group.Key}");
-                foreach (var person in group)
-                {
-                    //Console.WriteLine($"  {person.Name}");
-                }
-            }
-            #endregion
-
-            #endregion
-
 
             #region Chunk
 
